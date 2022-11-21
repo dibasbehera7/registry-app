@@ -34,7 +34,7 @@ function Registry() {
     }
 
     const editItem = (index) => {
-        if (error) return;
+        if (error || textInput.length < 3) return;
 
         let newData = [...registryData]
         newData[index] = textInput
@@ -48,7 +48,7 @@ function Registry() {
             <Link to="/">Click here to go to home</Link>
             <form onSubmit={addItem}>
                 <input type="text" placeholder="Enter to do action plans" value={textInput} onChange={(e) => setTextInput(e.target.value)} />
-                {(textInput.length >= 3) ? <input type="submit" value="Submit" /> : null}
+                {(textInput.length > 5) ? <input type="submit" value="Submit" /> : null}
             </form>
             {error ? <span style={{ color: "red" }} >Error Occurred!</span> : null}
             <ul>
