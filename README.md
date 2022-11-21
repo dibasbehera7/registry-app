@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4789ffa5-8c76-4f08-9821-5ed018082085/deploy-status)](https://app.netlify.com/sites/dibasbehera-registryapp/deploys)
+  - Running on https://dibasbehera-registryapp.netlify.app/registry
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
